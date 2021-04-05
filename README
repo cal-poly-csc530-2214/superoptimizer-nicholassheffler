@@ -1,0 +1,12 @@
+First, I started with the Aha github repository and it took me a while to go
+through the documentation and attempt to grasp how their code operated. Then
+I tried to modify the Aha implementation to do the max function, but I quickly 
+realized that a lot of tweaks would have to made to the superoptimzer 
+implementation in order for it to work with more than one argument being passed 
+to the function.
+After that I decided to try the multiplication by a constant. My results were 
+consistent with thatof massalin's paper where I began to find solutions at the 
+size of 5 instructions for a multiply by a 'small' number. When I tried to run 
+it on a big constant, the code ran seemingly endlessly. This is likely due to 
+the way the superoptimizer looks for solutions. At the moment this is where I
+have stopped.
